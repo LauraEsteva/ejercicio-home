@@ -23,6 +23,9 @@ main{
     margin: 1em 0;
     width: 100%;
 }
+.imagen4out{
+    width: 100%;
+}
 
 .destacados{
     display: flex;
