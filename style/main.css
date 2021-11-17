@@ -14,8 +14,13 @@ body{
 /*** cabecera ***/
 
 header{
-    display: flex;
+    position:fixed;
     height: 10vh;
+    z-index: 1002;
+    
+}
+.menu-superior{
+    display:flex;
     justify-content: start;
 }
 
@@ -23,8 +28,19 @@ main{
     margin: 1em 0;
     width: 100%;
 }
-.imagen4out{
+
+.slider .imagen4out{
     width: 100%;
+    position:relative;
+    z-index: 1000;
+    top: 3em;        
+}
+.mostraout-slider-text{
+    position:absolute;
+    z-index: 1001;
+    top: 60vh;
+    left: 26%;
+        
 }
 
 .destacados{
