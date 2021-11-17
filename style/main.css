@@ -32,14 +32,26 @@ main{
 .destacados .destacado{
     margin: 1em;
     font-size: 1.2em;
+    font-family: "Ubuntu"
 }
 
 .destacados > div img{
-    margin-bottom: 1em;
-    
+    margin-bottom: 1em;  
 }
 
-  
+.seccion-actividades {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5em;
+}
+.seccion-actividades__texto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;  
+    width: 50%;
+    height: auto;         
+}
+
 .main-element{ 
     margin-bottom: 2em;
 }
@@ -64,7 +76,7 @@ h1, h2, h3, h4, h5, h6, a, p{
 }
 
 h1, h2, h3, h4 {
-    font-family: "'Raleway', sans-serif";
+    font-family: "Ubuntu";
 }
 
 h5, h6 {
