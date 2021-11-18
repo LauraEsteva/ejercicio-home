@@ -89,6 +89,10 @@ main{
     margin-bottom: 2em;
 }
 
+.cinema3d model-viewer{
+    height: 20em;
+    width: 30em;
+}
 footer{
     margin-top: auto; 
     margin-bottom: 2em;
