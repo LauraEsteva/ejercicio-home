@@ -18,20 +18,20 @@
         <header>
             <div class="menu-superior">
                 <div class= "header-element">
-                    <div class="header-element logo">
+                    <div class="header-element__logo">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M20.84 2.18L16.91 2.96L19.65 6.5L21.62 6.1L20.84 2.18M13.97 3.54L12 3.93L14.75 7.46L16.71 7.07L13.97 3.54M9.07 4.5L7.1 4.91L9.85 8.44L11.81 8.05L9.07 4.5M4.16 5.5L3.18 5.69A2 2 0 0 0 1.61 8.04L2 10L6.9 9.03L4.16 5.5M2 10V20C2 21.11 2.9 22 4 22H20C21.11 22 22 21.11 22 20V10H2Z" />
                          </svg>
                     </div>
     
                     <div class="menulist">
-                        <span>Ficción nacional</span>
-                        <span>Ficción internacional</span>
-                        <span> Documental </span>
-                        <span> Cortometrajes </span>                           
-                    
-                     </div>
-                
+                        <ul>
+                            <il>Ficción nacional</il>
+                            <il>Ficción internacional</il>
+                            <il>Documental</il>
+                            <il>Cortometrajes </il>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -40,29 +40,46 @@
             <!-- empieza slider-->
             <div class="slider">
                 <div class="imagen4out">
-                    <img src="images/face_español.webp" alt="cartel 4ª mostra OUT">
+                    <img src="images/face.webp" alt="cartel 4ª mostra OUT">
                 </div>
                 <div class="mostraout-slider-text">
                     <h3>Mostra OUT</h3>
+                </div>
+                <div class="slider-boton">
+
                 </div>
                
             </div>
             <!-- acaba slider-->
             <!--empieza destacado peliculas-->
             <div class="seccion-peliculas">
-                <h2>Películas</h2>
+                <div class="seccion-peliculas__titulo">
+                    <h2>Películas</h2>
+                </div>
                 <div class="destacados">
                     <div class="destacado">
-                        <img src="images/CICADA .webp" alt="cicada">
-                        <h3>Cicada</h3> 
+                        <div class="destacado__imagen">
+                            <img src="images/CICADA .webp" alt="cicada">
+                        </div>
+                        <div class="destacado__texto">
+                            <h3>Cicada</h3>
+                        </div>                         
                     </div>
                     <div class="destacado">
-                        <img src="images/Short Documental ALL I NEED IS A BALL.webp" alt="all i need is a ball">
-                        <h3>All I need is a ball</h3>
-                    </div>
+                        <div class="destacado__imagen">
+                            <img src="images/Short Documental ALL I NEED IS A BALL.webp" alt="all i need is a ball">
+                        </div>
+                        <div class="destacado__texto">
+                            <h3>All I need is a ball</h3>
+                        </div>
+                     </div>
                     <div class="destacado">
-                        <img src="images/Short Ficció Leo y Alex.webp" alt="Leo y Alex en pleno siglo XXI">
-                        <h3>Leo y Alex en pleno siglo XXI</h3>
+                        <div class="destacado__imagen">
+                            <img src="images/Short Ficció Leo y Alex.webp" alt="Leo y Alex en pleno siglo XXI">
+                        </div>
+                        <div class="destacado__texto">
+                            <h3>Leo y Alex en pleno siglo XXI</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,7 +113,12 @@
 
             </div>
             <!--acaba seccion actividades-->
+            <!--empieza 3d-->
+            <div class="cinema3d">
+                <model-viewer alt="Cinema 3D" src="images/smallcinema3d.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="shared-assets/environments/moon_1k.hdr" poster="assets/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls></model-viewer> 
+            </div>
 
+            <!--acaba 3d-->
         </main>
 
         <footer>
@@ -117,6 +139,7 @@
                 }
             });        
         </script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
     </body>
 </html>
